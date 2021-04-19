@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/db16d5e85c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="mobiledashboard d-none" id="mobiledashboard">
+            <i class="fas fa-times close" id="dashboardClose"></i>
+            <div class="sections">
+                <div class="wallet-container">
+                    <img src="https://lh3.googleusercontent.com/fife/ABSRlIo5LNJFu6Dd_tY4wAJnMY0awRtS-p0X9KR_C-DnGQc2MKqTW-G6ePYA7oDAisSG7ledAmJCDQxlDiA9FKud7FUiYtVh2wXXDvV_QO3qrXP2XgQgAwh5Tojajgx4RgFh7lIHBEgaWuuFIUS1QyOgjlnrJaWb3VzYe5OhGV_WZypWCVnUD6o0-_Mf7jhc6KW7LMuQfhutX8TjfHFRZzg2YmuTedM3raEGXpPzJAvT-NoPPNGi7b1kLcQE1jSwwcB8c1-vscVAUlsoDbqoQgcoCDaVctZdHh8YTjuRA_05yJW7Yha3VVamSX1P20HGtOOcerQASd3CHZwEHZj2CNClfiWD_k75QGHLkSgRE3V6a2Msz3ya3FFBXuvcYBUxrrDw4gPquH2ZGYe-NcVWrRx0LdtvmfwLh4sbabYx6bp5g8QFSzS_x_-WhitulAH0GUczSNwq7cAZeaOLWAx2CywDQX0sSkuIt-XEL4mcO0D0XhXnpll6vnNSio529kqQJuFHvNlqTL81dEpc79ZbrQ722lpgeas8uzBgXMSddQcJSFnLvtNyODUdSlZoiHMid-tZL3WfzUmtNQG9k_ySqVIopbzPwO09zbnOovni836V1ed6uM4ZyFpjO9hRAiaKXsQ1o9XtqCCiUK6yMsjqGV2S0lWvWclryYphaygz3Ht2929Dd_D9ZMPC9nzPYk3EOqpXF8hcn9nTRAmxENECxnr7ooOK0cdx5oSW=s220-ft?authuser=0" class="wallet" />
+                    <p class="wallet-sec">Wallet</p>
+                </div>
+                <div class="regularsection-container">
+                    <img src="https://drive.google.com/thumbnail?id=1RSMFu8SHRgstn_08lJLKXbE88OIV4mvg" class="wallet" />
+                    <p class="wallet-sec">Wolfpacks</p>
+                </div>
+                <div class="regularsection-container">
+                    <img src="https://drive.google.com/thumbnail?id=1Gvhr1ckW0LHKzxGWtOnRaxyv3RPLmZoz" class="wallet" />
+                    <p class="wallet-sec">Portfolio</p>
+                </div>
+                <div class="regularsection-container">
+                    <img src="https://drive.google.com/thumbnail?id=1Lvc74rMKz9UeN3GIp3iMejdXkf-Z-Chz" class="wallet" />
+                    <p class="wallet-sec">Transparency</p>
+                </div>
+                <div class="regularsection-container">
+                    <img src="https://drive.google.com/thumbnail?id=1CqvwlT7MOH0mgYdlJHLwxHVsFqHcVsqR" class="wallet" />
+                    <p class="wallet-sec">All properties</p>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-profile d-none" id="mobileProfile">
+            <i class="fas fa-times close" id="profileClose"></i>
+            <div>
+                <div class="profile-section">
+                    <i class="far fa-user icon"></i>
+                    <p>Profile</p>
+                </div>
+                <hr />
+                <div class="profile-section">
+                    <i class="far fa-edit icon"></i>
+                    <p>Update Account</p>
+                </div>
+                <hr />
+                <div class="profile-section">
+                    <i class="fas fa-power-off icon"></i>
+                    <p>Log off</p>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-headers-container">
+            <div class="mobile-header">
+                <img src="https://lh3.googleusercontent.com/fife/ABSRlIqipEqTKJQOZkovdIjp0BoJMhrcB26rONVHUh_UVo7INcRi0p76Xs6kaa6LuniP8MrB6gkGEOle-3boldX1U5tN_S2cvnnu8XPlO7SCpsLfyWns_XbwEZYiQIhe0qmsM5vcRoWcwcnwhWNdzU49go0sfHBRVY1QsNJoJM4Nwe2BPH78tslwjgg3ZtuaPYWDJxrhjDK1DWd5sFuuYk6zELHa_V34sHp5ktEdv2MnVXNu-9SEUa058ZK7SjA4wC9FDXAVPmaf0cz0t5_1Tk2M0JMBWIPd2ZIFjIJunaIzePyhKGMXd2UXt7me4AGQzi_dCkm8GxvTf9Foe3277k2c_IUav3NUmyk-9fll-JpgFeuO7pOsBxZ28ZQZiQcfg9IBn58lrvhAUUpHv1u7rvWZX3-6gnxkqKbNFRsjoHxVARKbCmLAMzrI8uYePR0su_I-t6OINCjJOFql8-ToUA-tBFAwiOz2AeNKH7xlZND-U7EG7mzzrRsfsPyHftFaLn1bWXtMxyBQ-ehiVO_jYCIKADkbJzHwZ-we50I2IYxmMLa7pvjXKSvkycNEdPbdPRGpIh0lZuTA76UDT517K66_m_wP0cmrpRmmXUEGTERQw3fKLKR3Y3wlRMDCkwy1ee15ID99WoVEfiJZOKUraSAOTAsmDZyF9QWYuYAPaNWy4O5qEeo-6fSCs19K1VGU6bI1dG0uE8slSYSJLtDzd2zbSwoIQHMxGc0l=s220-ft?authuser=0" class="mobile-logo" />
+                <div>
+                    <img src="https://drive.google.com/thumbnail?id=1NBrLxHisNfaa8Ek4U226xC8HAAMfub8H" class="message" />
+                    <img src="https://drive.google.com/thumbnail?id=1C8NZ-VHkWGpxgaVsJ2JBhB16vVk-fEw2" class="message" />
+                    <img src="https://drive.google.com/thumbnail?id=19YpHSwiOd63wss4PqzdCTcmf2UgojQ9H" class="photo" id="photo" />
+                </div>
+            </div>
+            <div class="wallet-header shadow">
+                <div class="mobile-wallet">
+                    <img src="https://drive.google.com/thumbnail?id=1ESmMz74_iouKfdt_CcyIUF7ckD_7LAyo" class="mobile-wallet-image" id="menu" />
+                    <p class="wallet-name">Wallet</p>
+                </div>
+                <div class="inverstor-container">
+                    <img src="https://drive.google.com/thumbnail?id=1hA-mjSs-ooPmi-tZLBrLQ2U_mI-HY3df" class="investor-image" />
+                    <p class="investor">Investor</p>
+                </div>
+            </div>
+            <div class="mobile-contents">
+                <p class="content overview">Overview</p>
+                <p class="content">Savings</p>
+                <p class="content">Investments</p>
+            </div>
+            <hr />
+        </div>
+        <div class="dashboard">
+            <div>
+                <img src="https://lh3.googleusercontent.com/d/1Upq-FGdh2PryOcmfXa2qsy4-_Y3Q3pyc=s220?authuser=0" class="logo" />
+                <hr class="horizontal" />
+            </div>
+            <div class="sections">
+                <div class="wallet-container">
+                    <img src="https://lh3.googleusercontent.com/fife/ABSRlIo5LNJFu6Dd_tY4wAJnMY0awRtS-p0X9KR_C-DnGQc2MKqTW-G6ePYA7oDAisSG7ledAmJCDQxlDiA9FKud7FUiYtVh2wXXDvV_QO3qrXP2XgQgAwh5Tojajgx4RgFh7lIHBEgaWuuFIUS1QyOgjlnrJaWb3VzYe5OhGV_WZypWCVnUD6o0-_Mf7jhc6KW7LMuQfhutX8TjfHFRZzg2YmuTedM3raEGXpPzJAvT-NoPPNGi7b1kLcQE1jSwwcB8c1-vscVAUlsoDbqoQgcoCDaVctZdHh8YTjuRA_05yJW7Yha3VVamSX1P20HGtOOcerQASd3CHZwEHZj2CNClfiWD_k75QGHLkSgRE3V6a2Msz3ya3FFBXuvcYBUxrrDw4gPquH2ZGYe-NcVWrRx0LdtvmfwLh4sbabYx6bp5g8QFSzS_x_-WhitulAH0GUczSNwq7cAZeaOLWAx2CywDQX0sSkuIt-XEL4mcO0D0XhXnpll6vnNSio529kqQJuFHvNlqTL81dEpc79ZbrQ722lpgeas8uzBgXMSddQcJSFnLvtNyODUdSlZoiHMid-tZL3WfzUmtNQG9k_ySqVIopbzPwO09zbnOovni836V1ed6uM4ZyFpjO9hRAiaKXsQ1o9XtqCCiUK6yMsjqGV2S0lWvWclryYphaygz3Ht2929Dd_D9ZMPC9nzPYk3EOqpXF8hcn9nTRAmxENECxnr7ooOK0cdx5oSW=s220-ft?authuser=0" class="wallet" />
+                    <p class="wallet-sec">Wallet</p>
+                </div>
+                <div class="regularsection-container">
+                    <img src="https://drive.google.com/thumbnail?id=1RSMFu8SHRgstn_08lJLKXbE88OIV4mvg" class="wallet" />
+                    <p class="wallet-sec">Wolfpacks</p>
+                </div>
+                <div class="regularsection-container">
+                    <img src="https://drive.google.com/thumbnail?id=1Gvhr1ckW0LHKzxGWtOnRaxyv3RPLmZoz" class="wallet" />
+                    <p class="wallet-sec">Portfolio</p>
+                </div>
+                <div class="regularsection-container">
+                    <img src="https://drive.google.com/thumbnail?id=1Lvc74rMKz9UeN3GIp3iMejdXkf-Z-Chz" class="wallet" />
+                    <p class="wallet-sec">Transparency</p>
+                </div>
+                <div class="regularsection-container">
+                    <img src="https://drive.google.com/thumbnail?id=1CqvwlT7MOH0mgYdlJHLwxHVsFqHcVsqR" class="wallet" />
+                    <p class="wallet-sec">All properties</p>
+                </div>
+            </div>
+            <div class="alert-box">
+                <img src="https://drive.google.com/thumbnail?id=1Xaiun3v5oLGXiHAASG_VDYk2j68IHWVm" class="cross" />
+                <p class="alert-text">Your account is not yet activated to sell Freedom Coins™. Please specify your PayPal payment address to activate your account.</p>
+                <button class="alert-button">Click Here</button>
+            </div>
+        </div>
+        <div class="page-container">
+            <div class="header-container">
+                <div class="contents">
+                    <p class="content overview">Overview</p>
+                    <p class="content">Savings</p>
+                    <p class="content">Investments</p>
+                </div>
+                <div class="user-details">
+                    <img src="https://drive.google.com/thumbnail?id=1NBrLxHisNfaa8Ek4U226xC8HAAMfub8H" class="message" />
+                    <img src="https://drive.google.com/thumbnail?id=1C8NZ-VHkWGpxgaVsJ2JBhB16vVk-fEw2" class="message" />
+                    <div class="inverstor-container">
+                        <img src="https://drive.google.com/thumbnail?id=1hA-mjSs-ooPmi-tZLBrLQ2U_mI-HY3df" class="investor-image" />
+                        <p class="investor">Investor</p>
+                    </div>
+                    <img src="https://drive.google.com/thumbnail?id=19YpHSwiOd63wss4PqzdCTcmf2UgojQ9H" class="photo" />
+                    <p class="name">Rober Downey</p>
+                    <img src="https://drive.google.com/thumbnail?id=1K-qJCfwSTQVfliLaj4srmFgwiOZ1IvJ0" class="drop" />
+                </div>
+            </div>
+            <hr class="header-line" />
+            <div class="page-content">
+                <div class="finance">
+                    <div class="finantial-calculation-contianer">
+                        <div class="box1 w-100">
+                            <p class="heading">Total Balance <span><img src="https://drive.google.com/thumbnail?id=1dfLK3nIgeVDDAM-xC2EEUrqAwaP18jG9" class="hint" /></span><span class="number ml-0">:$60</span></p>
+                            <div class="checking-container">
+                                <p class="checking">Checking</p>
+                                <div class="d-flex flex-row">
+                                    <p class="cash"><span>Cash</span></p>
+                                    <span class="number">:$20</span>
+                                </div>
+                                <p class="buy">Buy Coins</p>
+                                <div class="d-flex flex-row  mr-2 ml-2">
+                                    <div class="coins-count ml-2">
+                                        <p class="amount" id="buyCoins">0</p>
+                                        <div class="d-flex flex-column drop-container">
+                                            <img src="https://drive.google.com/thumbnail?id=1jmKbnA-HW_1U-TTgGScS31uOHVd8T9rL" class="drop-1" id="dropUp" />
+                                            <img src="https://drive.google.com/thumbnail?id=1JBvxVsy8JMa9yQXp6vqNHXpnRHwaP1FV" class="drop-1" id="dropDown" />
+                                        </div>
+                                    </div>
+                                    <button class="btn buy-button ml-3">
+                                        Buy
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Investments-container">
+                                <p class="checking">Savings</p>
+                                <div class="d-flex flex-row">
+                                    <p class="cash"><span>Invested</span></p>
+                                    <span class="number">:$20</span>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <p class="cash"><span>Total Payout</span></p>
+                                    <span class="number">:$20</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class=" box2 w-100">
+                            <p class="heading">Wallet Adderess <span><img src="https://drive.google.com/thumbnail?id=13i5ptm59nDOBXStBEDFSjOyhS1WlZP42" class="hint" /></span></p>
+                            <div class="checking-container">
+                                <p class="checking">Transfers</p>
+                                <div class="d-flex flex-row">
+                                    <p class="cash"><span>PayPal</span></p>
+                                    <span class="number">Bank Account</span>
+                                </div>
+                                <p class="buy">Sell Coins</p>
+                                <div class="d-flex flex-row  mr-2 ml-2">
+                                    <div class="coins-count ml-2">
+                                        <p class="amount" id="sellCoins">0</p>
+                                        <div class="d-flex flex-column drop-container">
+                                            <img src="https://drive.google.com/thumbnail?id=1jmKbnA-HW_1U-TTgGScS31uOHVd8T9rL" class="drop-1" id="sellDropUp" />
+                                            <img src="https://drive.google.com/thumbnail?id=1JBvxVsy8JMa9yQXp6vqNHXpnRHwaP1FV" class="drop-1" id="sellDropDown" />
+                                        </div>
+                                    </div>
+                                    <button class="btn buy-button ml-3">
+                                        Buy
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="Investments-container">
+                                <p class="checking">Investments</p>
+                                <div class="d-flex flex-row">
+                                    <p class="cash"><span>Invested</span></p>
+                                    <span class="number">:$20</span>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <p class="cash"><span>Contributed</span></p>
+                                    <span class="number">:$20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="finantial-transcation-container">
+                        <p class="heading">Recent Transaction</p>
+                        <div class="columns">
+                            <p>Date</p>
+                            <p>Transaction</p>
+                            <p>Amount</p>
+                        </div>
+                        <hr />
+                        <div class="column-items">
+                            <ul class="list text-center">
+                                <li>09 Mar 2020</li>
+                                <li>09 Mar 2020</li>
+                                <li>09 Mar 2020</li>
+                                <li>09 Mar 2020</li>
+                                <li>09 Mar 2020</li>
+                                <li>09 Mar 2020</li>
+                            </ul>
+                            <ul class="list">
+                                <li>20922 Avalon Drive</li>
+                                <li>20922 Avalon Drive</li>
+                                <li>Freedom Coin</li>
+                                <li>Freedom Coin</li>
+                                <li>profit-wolfPack</li>
+                                <li>profit-wolfPack</li>
+                            </ul>
+                            <ul class="amount-list text-center">
+                                <li>$10.00</li>
+                                <li>-$1000.00</li>
+                                <li>-$10.00</li>
+                                <li>-$500.00</li>
+                                <li>-$400.00</li>
+                                <li>-$400.00</li>
+                            </ul>
+                        </div>
+                        <a>View More</a>
+                    </div>
+                </div>
+                <div class="assets m-2">
+                    <p class="heading">Available Assets</p>
+                    <hr />
+                    <div class="asset-card">
+                        <img src="https://drive.google.com/thumbnail?id=1P9-eNdGwwYpHL69vgUyx90iCUKPeYn7C" class="asset-image" />
+                        <div>
+                            <p class="asset-heading">Potential Covid-19 Cure:Clinical Trial</p>
+                            <div class="description">
+                                <p>Description:</p>
+                                <p>A well known safe hygenic medication that has been used for decades has been shown into...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="asset-card">
+                        <img src="https://drive.google.com/thumbnail?id=1sDLkgLBPI1Y6ccwb527LGv64qFJ5c7bR" class="asset-image" />
+                        <div>
+                            <p class="asset-heading">Mission</p>
+                            <div class="description">
+                                <p>Description:</p>
+                                <p>Wonership in minuteman is decentralized and distributed democrally across its base....</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="asset-card">
+                        <img src="https://drive.google.com/thumbnail?id=18oWqbrxVQWfPT4LBB2oyKoMACDiKbmYR" class="asset-image" />
+                        <div>
+                            <p class="asset-heading">20922 Avaion Drive</p>
+                            <div class="description">
+                                <p>ADdress:</p>
+                                <p>8801 Holly Road TN 880215</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="asset-card">
+                        <img src="https://drive.google.com/thumbnail?id=1F2_gJsZWXwCk4XjAlRG_nHyUoQiOBEYP" class="asset-image" />
+                        <div>
+                            <p class="asset-heading">Address:</p>
+                            <div class="description">
+                                <p>ADdress:</p>
+                                <p>1201 S. Joyce Street. Suite C-. 3. Arlington</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                <div class="mobile-recent-transactions">
+                    <p class="heading">Recent Transactions</p>
+                    <div class="transaction-card">
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Date</p>
+                            <p class="cores-number"> <span class="pr-2">:</span>09 Mar,2020</p>
+                        </div>
+                        <div class="d-flex flex-row pb-0">
+                            <p class="card-head">Transaction</p>
+                            <p class="cores-number"><span class="pr-2">:</span>20922 Avalon Drive</p>
+                        </div>
+                        <p class="divi">— Dividend</p>
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Amount</p>
+                            <p class="amount-num"><span class="pr-2 cores-number">:</span>$100</p>
+                        </div>
+                    </div>
+                    <div class="transaction-card">
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Date</p>
+                            <p class="cores-number"> <span class="pr-2">:</span>09 Mar,2020</p>
+                        </div>
+                        <div class="d-flex flex-row pb-0">
+                            <p class="card-head">Transaction</p>
+                            <p class="cores-number"><span class="pr-2">:</span>20922 Avalon Drive</p>
+                        </div>
+                        <p class="divi">— Dividend</p>
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Amount</p>
+                            <p class="amount-num"><span class="pr-2 cores-number">:</span>$100</p>
+                        </div>
+                    </div>
+                    <div class="transaction-card">
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Date</p>
+                            <p class="cores-number"> <span class="pr-2">:</span>09 Mar,2020</p>
+                        </div>
+                        <div class="d-flex flex-row pb-0">
+                            <p class="card-head">Transaction</p>
+                            <p class="cores-number"><span class="pr-2">:</span>Freedom Coin</p>
+                        </div>
+                        <p class="divi">— Dividend</p>
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Amount</p>
+                            <p class="amount-num"><span class="pr-2 cores-number">:</span>$100</p>
+                        </div>
+                    </div>
+                    <div class="transaction-card">
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Date</p>
+                            <p class="cores-number"> <span class="pr-2">:</span>09 Mar,2020</p>
+                        </div>
+                        <div class="d-flex flex-row pb-0">
+                            <p class="card-head">Transaction</p>
+                            <p class="cores-number"><span class="pr-2">:</span>Freedom Coin</p>
+                        </div>
+                        <p class="divi">— Dividend</p>
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Amount</p>
+                            <p class="amount-num"><span class="pr-2 cores-number">:</span>$100</p>
+                        </div>
+                    </div>
+                    <div class="transaction-card">
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Date</p>
+                            <p class="cores-number"> <span class="pr-2">:</span>09 Mar,2020</p>
+                        </div>
+                        <div class="d-flex flex-row pb-0">
+                            <p class="card-head">Transaction</p>
+                            <p class="cores-number"><span class="pr-2">:</span>profit-wolfPack</p>
+                        </div>
+                        <p class="divi">— Dividend</p>
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Amount</p>
+                            <p class="amount-num"><span class="pr-2 cores-number">:</span>$100</p>
+                        </div>
+                    </div>
+                    <div class="transaction-card">
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Date</p>
+                            <p class="cores-number"> <span class="pr-2">:</span>09 Mar,2020</p>
+                        </div>
+                        <div class="d-flex flex-row pb-0">
+                            <p class="card-head">Transaction</p>
+                            <p class="cores-number"><span class="pr-2">:</span>profit-wolfPack</p>
+                        </div>
+                        <p class="divi">— Dividend</p>
+                        <div class="d-flex flex-row">
+                            <p class="card-head">Amount</p>
+                            <p class="amount-num"><span class="pr-2 cores-number">:</span>$100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

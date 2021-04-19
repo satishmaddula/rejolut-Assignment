@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: row;
+    background-color: #293879;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #293879;
+    height: 100vh;
+}
+
+.sections {
+    flex-grow: 1;
+}
+
+.wallet-container {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 6px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #ffffff;
+}
+
+.regularsection-container {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-radius: 3px;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.logo {
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.horizontal {
+    margin: 20px;
+    margin-top: 4px;
+}
+
+.wallet {
+    margin-left: 15px;
+    margin-right: 5px;
+    height: 13px;
+}
+
+.wallet-sec {
+    margin-left: 20px;
+    font-size: 15px;
+    align-self: center;
+    margin-top: 14px;
+}
+
+.alert-box {
+    background-color: #1C2964;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.alert-text {
+    color: #ffffff;
+    margin: 15px;
+    font-size: 15px;
+}
+
+.cross {
+    height: 15px;
+    width: 15px;
+    align-self: flex-end;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.alert-button {
+    background-color: #FFB400;
+    color: #ffffff;
+    margin: 15px;
+    height: 30px;
+    font-size: 15px;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.page-container {
+    background-color: #ffffff;
+    width: 80%;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 0px solid;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.wallet-address-container {
+    display: flex;
+}
+
+.contents {
+    display: flex;
+    color: #717171;
+    font-size: 15px;
+}
+
+.content {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 500;
+    margin-top: 15px;
+}
+
+.overview {
+    color: #2C2C2C;
+    margin-left: 15px;
+}
+
+
+.message {
+    margin-top: 18px;
+    margin-right: 10px;
+    height: 20px;
+}
+
+.photo {
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.inverstor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-right: 15px;
+    padding: 5px;
+    height: 35px;
+    border: 1px solid #2938792C;
+    margin-top: 10px;
+}
+
+.user-details {
+    display: flex;
+}
+
+.investor {
+    color: #293879;
+    font-size: 17px;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+.investor-image {
+    background-color: #293879;
+    flex-shrink: 1;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 5px;
+    height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.drop {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.bar-code {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.checking-container {
+    border: 1px solid #E7E8E9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.checking {
+    background-color: #006FFF29;
+    height: 51px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+    color: #293879;
+    margin-top: 0px;
+}
+
+.coins-count {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E7E8E9;
+    border-radius: 5px;
+    max-width: 50%;
+    width: 50%;
+}
+
+.cash-container {
+    display: flex;
+}
+
+.buy-button {
+    border-radius: 5px;
+    background-color: #293879;
+    color: #ffffff;
+    width: 50%;
+}
+
+.buy {
+    margin-bottom: 0px;
+    margin-left: 20px;
+    color: #717171;
+}
+
+.cash {
+    display: flex;
+    color: #717171;
+    width: 70%;
+    padding-left: 20px;
+}
+
+.number {
+    font-weight: bold;
+    width: 30%;
+}
+
+.Investments-container {
+    border: 1px solid #E7E8E9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.hint {
+    height: 17px;
+    width: 17px;
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.drop-1 {
+    height: 10px;
+    width: 10px;
+}
+
+.drop-container {
+    align-self: center;
+}
+
+.amount {
+    color: #717171;
+    align-self: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#dashboardClose {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+
+
+.columns {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.column-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.amount-list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+
+
+
+
+
+.asset-card {
+    display: flex;
+}
+
+.asset-image {
+    height: 140px;
+    width: 100px;
+}
+
+.asset-heading {
+    font-size: 15px;
+}
+
+.description {
+    color: #717171;
+}
+
+
+.mobile-profile {
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #707070;
+}
+
+.profile-section {
+    display: flex;
+}
+
+.icon {
+    align-self: center;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.close {
+    align-self: flex-end;
+    margin: 10px;
+}
+
+
+
+.card-head {
+    color: #707070;
+    font-weight: 500;
+    width: 50%;
+}
+
+.cores-number {
+    color: #707070;
+}
+
+.amount-num {
+    color: #05CF5B;
+    font-weight: 500;
+}
+
+.divi {
+    color: #707070;
+    font-style: italic;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 0px;
+}
+
+.transaction-card {
+    border-radius: 10px;
+    border: 1px solid #E1E1E1;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+@media (max-width:600px) {
+    .user-details {
+        display: none;
+    }
+
+    .header-container {
+        display: none;
+        justify-content: center;
+    }
+
+    .dashboard {
+        display: none;
+    }
+
+    .bg-container {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto";
+        align-items: center;
+    }
+
+    .mobile-header {
+        background-color: #293879;
+        width: 100%;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+
+    }
+
+    .mobile-headers-container {
+        width: 100%;
+    }
+
+    .mobile-logo {
+        height: 40px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+
+    .header-line {
+        display: none;
+    }
+
+    .headers-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wallet-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-wallet {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 10px;
+    }
+
+    .mobile-wallet-image {
+        height: 10px;
+        width: 18px;
+        align-self: center;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .wallet-name {
+        align-self: center;
+        margin-top: 15px;
+    }
+
+    .mobile-contents {
+        display: flex;
+        color: #717171;
+        font-size: 18px;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+
+    .finantial-calculation-contianer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .finantial-transcation-container {
+        display: none;
+    }
+
+    .page-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .asset-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobiledashboard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #293879;
+        height: 100vh;
+    }
+
+    .mobile-recent-transactions {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width:601px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .header-line {
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+
+    .mobile-headers-container {
+        display: none;
+    }
+
+    .fanantial-container {
+        display: flex;
+    }
+
+    .finance {
+        width: 60%;
+    }
+
+    .finantial-calculation-contianer {
+        display: flex;
+    }
+
+    .finantial-transcation-container {
+        margin-top: 45px;
+        width: 100%;
+    }
+
+    .box1 {
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    .box2 {
+        width: 45%;
+        margin-left: 10px;
+    }
+
+    .assets {
+        width: 40%;
+    }
+
+    .page-content {
+        display: flex;
+        overflow: scroll;
+    }
+
+    .mobile-profile {
+        display: none;
+    }
+
+    .mobile-recent-transactions {
+        display: none
+    }
+
+
+}
